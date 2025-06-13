@@ -122,3 +122,4 @@ while hero.level != 60:
             break
         else:
             continue
+#next step we add healing mechanic and when we die the player.json file resets resets
