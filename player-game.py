@@ -18,11 +18,13 @@ with open("player.json","r") as f:
     data=json.load(f)
 with open("command_list.json", "r") as c:
     cmd_list=json.load(c)
+with open("events.json","r") as d:
+    ev_list=json.load(d)
 H_name=input("what is the name of your hero: ")
 hero=player(H_name,data["level"],data["inventory"], data["health"])
 while True:
     event=str(randint)
-    
+    print(ev_list[event][1])
     command=input("what do you want to do(write //help// if you need assistance): ")
     if command.upper()=="HELP":
         for key , value in cmd_list.items():
