@@ -21,20 +21,23 @@ class player:
         self.max_health += int(100/self.level)
     def show_inventory(self):
         print(self.inventory)
+        for i, item in enumerate(self.inventory):
+            print(f"{i}: {item}")
+
     def heal(self,value):
         self.health += value
         if self.health > self.max_health:
             self.health= self.max_health
 def check_cmd(command,cmd_list):
     test=False
-    for key in cmd_list.items():
+    for key in cmd_list:
             if command.upper()==key.upper():
                 test=True
     while command.upper()=="HELP" or test==False:
         for ke , value in cmd_list.items():
          print(f"{ke}:{value}")
         command=input("what do you want to do(write //help// if you need assistance): ")
-        for key in cmd_list.items():
+        for key in cmd_list:
             if command.upper()==key.upper():
                 test=True
 def reward(ev_list,event,database):
@@ -65,7 +68,7 @@ with open("events.json","r") as d:
 H_name=input("what is the name of your hero: ")
 hero=player(H_name,data["level"],data["xp"],data["inventory"], data["health"])
 while hero.level != 60:
-    event=str(randint)
+    event=str(randint(1,len(ev_list)))
     print(ev_list[event][0])
     command=input("what do you want to do(write //help// if you need assistance): ")
     check_cmd(command,cmd_list)
@@ -111,7 +114,7 @@ while hero.level != 60:
             break
         
     elif command.upper()=="FLEE":
-        print(ev_list[event][2]+"(-"+str(ev_list[event][6])+" health")
+        print(ev_list[event][2]+"(-"+str(ev_list[event][5])+" health")
         hero.health -= ev_list[event][5]
         print("you have "+str(hero.health)+" HP left")
         if hero.health<=0:
