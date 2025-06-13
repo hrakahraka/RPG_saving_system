@@ -1,4 +1,5 @@
 import json
+from random import randint
 class player:
     def __init__(self,name,level,inventory,health):
         self.name=name
@@ -17,9 +18,16 @@ with open("player.json","r") as f:
     data=json.load(f)
 with open("command_list.json", "r") as c:
     cmd_list=json.load(c)
-H_name=input("what is the name of your hero")
+H_name=input("what is the name of your hero: ")
 hero=player(H_name,data["level"],data["inventory"], data["health"])
-command=input("what do you want to do(write //help// if you need assistance)")
-if command.upper()=="HELP":
-    for key , value in cmd_list.items():
-        print(f"{key}:{value}")
+while True:
+    event=str(randint)
+    
+    command=input("what do you want to do(write //help// if you need assistance): ")
+    if command.upper()=="HELP":
+        for key , value in cmd_list.items():
+         print(f"{key}:{value}")
+    else:    
+        for key in cmd_list.items():
+            if command==key:
+                
