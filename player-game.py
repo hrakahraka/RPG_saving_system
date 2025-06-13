@@ -26,10 +26,15 @@ while True:
     event=str(randint)
     print(ev_list[event][1])
     command=input("what do you want to do(write //help// if you need assistance): ")
-    if command.upper()=="HELP":
+    test=False
+    for key in cmd_list.items():
+        if command==key:
+            test=True
+    while command.upper()=="HELP" or test==False:
         for key , value in cmd_list.items():
          print(f"{key}:{value}")
-    else:    
-        for key in cmd_list.items():
-            if command==key:
+        command=input("what do you want to do(write //help// if you need assistance): ")
+    
+    
+        
                 
