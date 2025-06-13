@@ -15,6 +15,8 @@ class player:
         self.xp += bonus
     def level_up(self):
         self.level += 1
+        self.max_health += 100*self.level
+        self.health=self.max_health
     def health_bonus(self):
         self.max_health += int(100/self.level)
     def show_inventory(self):
@@ -37,7 +39,7 @@ def check_cmd(command,cmd_list):
                 test=True
 def reward(ev_list,event,database):
     hero.xp_bonus(ev_list[event][7])
-    print("you gained +"+str(ev_list[event][7])+" xp points")
+    print("you gained +"+str(ev_list[event][6])+" xp points")
     g=randint(1,3)
     category=""
     p=""
@@ -74,11 +76,14 @@ while hero.level != 60:
         command=input("what do you want to do next")
         check_cmd(command,cmd_list)
     if command.upper()=="ATTACK":
+        W1=""
+        S2=""
         tt=False
         while tt==False:
             choice1=int(input("choose your weapon"))
             for item in database["weapons"].items():
-                if item==hero.inventory[choice1]:
+                if [item][0]==hero.inventory[choice1]:
+                    W1=item
                     tt=True
             if tt==False:
                 print("not a valid weapon")
@@ -86,20 +91,31 @@ while hero.level != 60:
         while t==False:
             choice2=int(input("choose your shield"))
             for item in database["shields"].items():
-                if item==hero.inventory[choice2]:
+                if [item][0]==hero.inventory[choice2]:
+                    S2=item
                     tt=True
             if tt==False:
                 print("not a valid shield")
-        power=(int(database["weapons"[hero.inventory[choice1]]])+int(database["shields"[hero.inventory[choice2]]])/2)
+        power=(int(database["weapons"][W1][1])+int(database["shields"][S2][1]))/2
         if power >= int(ev_list[event][4]):
             print(ev_list[event][3])
             reward(ev_list,event,database)
             if hero.xp>=hero.level*200:
                 hero.level_up()
-                print("LEVEL UP !!")
+                print("LEVEL UP !! (max HP increased you have: )"+str(hero.max_health)+" Max HP")
+                
+            continue
         else:
             print(ev_list[event][1])
+            sleep(5)
+            break
         
     elif command.upper()=="FLEE":
         print(ev_list[event][2]+"(-"+str(ev_list[event][6])+" health")
-        hero.health -= ev_list[event][6]
+        hero.health -= ev_list[event][5]
+        print("you have "+str(hero.health)+" HP left")
+        if hero.health<=0:
+            print("you died")
+            break
+        else:
+            continue
