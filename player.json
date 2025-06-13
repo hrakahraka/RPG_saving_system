@@ -1,5 +1,6 @@
 {
     "level":1,
     "inventory":["iron sword","leather shield"],
+    "xp":0,
     "health":100
 }

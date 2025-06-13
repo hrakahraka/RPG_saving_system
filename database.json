@@ -1,0 +1,11 @@
+{
+    "weapons":{
+        "iron sword":5
+    },
+    "shields":{
+        "leather shield":5
+    },
+    "potions":{
+        "health potion":100
+    }
+}
