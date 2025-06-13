@@ -1,10 +1,8 @@
 {
     "inventory":"to show your inventory",
     "attack":"to attack",
-    "block":"to block",
     "flee":"to run away",
     "choose":"to choose item from inventory (choose the number)(items are sorted by numbers from left to right starting with 0)",
     "use":"to use chosen item",
-    "throw":"to throw away chosen item",
-    "pickup":"to pickup items"
+    "throw":"to throw away chosen item"
 }

@@ -1,11 +1,14 @@
 {
     "weapons":{
-        "iron sword":5
+        "1":["iron sword",5],
+        "2":["infinity sword",999]
     },
     "shields":{
-        "leather shield":5
+        "101":["leather shield",5],
+        "102":["void shield",999]
     },
     "potions":{
-        "health potion":100
+        "201":["health potion",100],
+        "202":["golden potion",999]
     }
 }
