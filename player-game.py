@@ -11,12 +11,15 @@ class player:
         self.level += 1
     def health_bonus(self):
         self.health += int(100/self.level)
+    def show_inventory(self):
+        print(self.inventory)
 with open("player.json","r") as f:
     data=json.load(f)
+with open("command_list.json", "r") as c:
+    cmd_list=json.load(c)
 H_name=input("what is the name of your hero")
 hero=player(H_name,data["level"],data["inventory"], data["health"])
-hero.add_item("shield")
-hero.level_up()
-hero.health_bonus()
-with open("player.json","w") as f:
-    json.dump(hero.__dict__,f,indent=4)
+command=input("what do you want to do(write //help// if you need assistance)")
+if command.upper()=="HELP":
+    for key , value in cmd_list.items():
+        print(f"{key}:{value}")
