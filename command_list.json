@@ -2,6 +2,6 @@
     "inventory":"to show your inventory",
     "attack":"to attack",
     "flee":"to run away",
-    "use":"to use chosen item",
-    "throw":"to throw away chosen item"
+    "heal":"to use a potion",
+    "throw":"to throw away an item"
 }

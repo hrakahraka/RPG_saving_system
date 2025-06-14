@@ -11,6 +11,9 @@ class player:
         self.max_health=health
     def add_item(self,item):
         self.inventory.append(item)
+    def throw_item(self,index):
+        self.inventory.pop(index)
+        print(self.inventory[index]+" have been thrown succsessfully")
     def xp_bonus(self,bonus):
         self.xp += bonus
     def level_up(self):
@@ -48,15 +51,16 @@ def reward(ev_list,event,database):
     p=""
     if g==1:
         category="weapons"
-        p=str(randint(1,2))
+        p=str(randint(1,len(database[category])))
     elif g==2:
         category="shields"
-        p=str(randint(101,102))
+        p=str(randint(101,len(database[category])+100))
     else:
         category="potions"
-        p=str(randint(201,202))
+        p=str(randint(201,len(database[category])+200))
     hero.add_item(database[category][p]["name"])
     print("you gained "+str(database[category][p]["name"]))
+    #reminder!!: we add an inventory limit later and show the power of each weapon
 def saving():
     with open("player.json" , "w") as f:
         json.dump(hero.__dict__ , f , indent=4)
@@ -85,10 +89,10 @@ count=0
 while hero.level != 60:
     count+=1
     if count>=2:
-        save=input("do you wan't to save your progress")
+        save=input("do you wan't to save your progress: ")
         while not((save.upper()=="YES")or(save.upper()=="NO")):
             print("invalid input")
-            save=input("YES or NO")
+            save=input("YES or NO: ")
         if save.upper()=="YES":
             saving()
             count=0
@@ -96,73 +100,125 @@ while hero.level != 60:
     print(ev_list[event][0])
     command=input("what do you want to do(write //help// if you need assistance): ")
     check_cmd(command,cmd_list)
-    if command.upper()=="INVENTORY":
-        hero.show_inventory()
-        sleep(5)
-        print(ev_list[event][0])
-        command=input("what do you want to do next")
-        check_cmd(command,cmd_list)
-    if command.upper()=="ATTACK":
-        W1=0
-        S2=0
-        weapon_found=False
-        while not weapon_found:
-            choice1=int(input("choose your weapon"))
-            for key , value in database["weapons"].items():
-                if value["name"]==hero.inventory[choice1]:
-                    W1=int(value["damage"])
-                    weapon_found=True
-            if weapon_found==False:
-                print("not a valid weapon")
-                hero.show_inventory()
-        shield_found=False
-        while not shield_found:
-            choice2=int(input("choose your shield"))
-            for key , value in database["shields"].items():
-                if value["name"]==hero.inventory[choice2]:
-                    S2=int(value["resistance"])
-                    shield_found=True
-            if shield_found==False:
-                print("not a valid shield")
-        power=(W1+S2)/2
-        threshold=int(ev_list[event][4])
-        percentage_of_win=int((power / threshold) * 100)
-        decide=input("you have "+str(percentage_of_win)+"%"+" chance to win do you want to proceed: ")
-        while not((decide.upper()=="YES")or(decide.upper()=="NO")):
-            print("invalid input")
-            decide=input("YES or NO")
-        if decide.upper()=="NO":
+    action=""
+    while action=="":
+        if command.upper()=="INVENTORY":
+            hero.show_inventory()
+            sleep(5)
+            print(ev_list[event][0])
+            command=input("what do you want to do next: ")
+            check_cmd(command,cmd_list)
+            continue
+        elif command.upper()=="HEAL":
+            health_addition=0
+            potion_found=False
+            while not potion_found:
+                choice=int(input("choose your potion: "))
+                for key , value in database["potions"].items():
+                    if value["name"]==hero.inventory[choice]:
+                        health_addition=int(value["value"])
+                        potion_found=True
+                if potion_found==False:
+                    print("not a valid potion")
+                    #here we will be stuck in not a valid potion forever(need a solution)
+            hero.heal(health_addition)
+            print(health_addition,"HP points added")
+            print("you have",hero.health,"HP points")
+            sleep(5)
+            print(ev_list[event][0])
+            command=input("what do you want to do next: ")
+            check_cmd(command,cmd_list)
+            continue
+        elif command.upper()=="THROW":
+            hero.show_inventory()
+            item_chosen=False
+            index=""
+            while not item_chosen:
+                index=input("choose the item you want to throw: ")
+                if (index.isdigit())and(int(index)<=len(hero.inventory)):
+                    index=int(index)
+                    item_chosen=True
+            decide=input("are you sure: ")
+            while not((decide.upper()=="YES")or(decide.upper()=="NO")):
+                print("invalid input")
+                decide=input("YES or NO: ")
+            if decide.upper()=="NO":
+                print("action cancelled")
+                sleep(5)
+                print(ev_list[event][0])
+                command=input("what do you want to do next: ")
+                check_cmd(command,cmd_list)
+                continue
+            elif decide.upper()=="YES":
+                hero.throw_item(index)
+                sleep(5)
+                print(ev_list[event][0])
+                command=input("what do you want to do next: ")
+                check_cmd(command,cmd_list)
+                continue
+        elif command.upper()=="ATTACK":
+            W1=0
+            S2=0
+            weapon_found=False
+            while not weapon_found:
+                choice1=int(input("choose your weapon: "))
+                for key , value in database["weapons"].items():
+                    if value["name"]==hero.inventory[choice1]:
+                        W1=int(value["damage"])
+                        weapon_found=True
+                if weapon_found==False:
+                    print("not a valid weapon")
+                    hero.show_inventory()
+            shield_found=False
+            while not shield_found:
+                choice2=int(input("choose your shield: "))
+                for key , value in database["shields"].items():
+                    if value["name"]==hero.inventory[choice2]:
+                        S2=int(value["resistance"])
+                        shield_found=True
+                if shield_found==False:
+                    print("not a valid shield")
+            power=(W1+S2)/2
+            threshold=int(ev_list[event][4])
+            percentage_of_win=int((power / threshold) * 100)
+            decide=input("you have "+str(percentage_of_win)+"%"+" chance to win do you want to proceed: ")
+            while not((decide.upper()=="YES")or(decide.upper()=="NO")):
+                print("invalid input")
+                decide=input("YES or NO: ")
+            if decide.upper()=="NO":
+                if hero.health>int(ev_list[event][5]):
+                    print(ev_list[event][2]+"(-"+str(ev_list[event][5])+" health)")
+                    hero.health -=int( ev_list[event][5])
+                    print("you have "+str(hero.health)+" HP left")
+                    action="next"
+                else:
+                    print("you tried to flee but you couldn,t")
+                    death()
+                    action="end"
+            else:
+                if power >= threshold or (power < threshold and randint(1, 100) <= percentage_of_win) :
+                    print(ev_list[event][3])
+                    reward(ev_list,event,database)
+                    if hero.xp>=hero.level*200:
+                        hero.level_up()
+                        print("LEVEL UP !! (max HP increased you have: )"+str(hero.max_health)+" Max HP")
+                        print(hero.level*200,"xp needed to reach level ",hero.level+1)   
+                    action="next"
+                else:
+                    print(ev_list[event][1])
+                    death()
+                    action="end"
+        elif command.upper()=="FLEE":
             if hero.health>int(ev_list[event][5]):
                 print(ev_list[event][2]+"(-"+str(ev_list[event][5])+" health)")
                 hero.health -=int( ev_list[event][5])
                 print("you have "+str(hero.health)+" HP left")
-                continue
+                action="next"
             else:
                 print("you tried to flee but you couldn,t")
                 death()
-                break
-        else:
-            if power >= threshold or (power < threshold and randint(1, 100) <= percentage_of_win) :
-                print(ev_list[event][3])
-                reward(ev_list,event,database)
-                if hero.xp>=hero.level*200:
-                    hero.level_up()
-                    print("LEVEL UP !! (max HP increased you have: )"+str(hero.max_health)+" Max HP")
-                    print(hero.level*200,"xp needed to reach level ",hero.level+1)   
-                continue
-            else:
-                print(ev_list[event][1])
-                death()
-                break
-        
-    elif command.upper()=="FLEE":
-        if hero.health>int(ev_list[event][5]):
-            print(ev_list[event][2]+"(-"+str(ev_list[event][5])+" health)")
-            hero.health -=int( ev_list[event][5])
-            print("you have "+str(hero.health)+" HP left")
-            continue
-        else:
-            print("you tried to flee but you couldn,t")
-            death()
-            break
-#next step we add healing mechanic and when we die the player.json file resets
+                action="end"
+    if action=="next":
+        continue
+    elif action=="end":
+        break
