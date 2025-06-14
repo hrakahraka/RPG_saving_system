@@ -29,33 +29,78 @@ class player:
     def reward(self,ev_list,event,database):
         self.xp_bonus(ev_list[event][6])
         print("you gained +"+str(ev_list[event][6])+" xp points")
-        g=randint(1,3)
-        category=""
-        p=""
-        if g==1:
-            category="weapons"
-            p=str(randint(1,len(database[category])))
-        elif g==2:
-            category="shields"
-            p=str(randint(101,len(database[category])+100))
-        else:
-            category="potions"
-            p=str(randint(201,len(database[category])+200))
-        self.add_item(database[category][p]["name"])
-        print("you gained "+str(database[category][p]["name"])) #reminder!!: we add an inventory limit later and show the power of each weapon
+        test=False
+        while len(self.inventory)>=20:
+            print("you don't have enought space")
+            YN=input("do you want to throw an item away?: ")
+            while not((YN.upper()=="YES")or(YN.upper()=="NO")):
+                print("invalid input")
+                YN=input("YES or NO: ")
+            if YN.upper()=="NO":
+                print("you haven't got any reward")
+                break
+            elif YN.upper()=="YES":
+                while True:
+                    self.show_inventory()
+                    item_chosen=False
+                    index=""
+                    while not item_chosen:
+                        index=input("choose the item you want to throw: ")
+                        if (index.isdigit())and(int(index)<=len(self.inventory)):
+                            index=int(index)
+                            item_chosen=True
+                    decide=input("are you sure: ")
+                    while not((decide.upper()=="YES")or(decide.upper()=="NO")):
+                        print("invalid input")
+                        decide=input("YES or NO: ")
+                    if decide.upper()=="NO":
+                        print("action cancelled")
+                        redo=input("do you still want to throw an item?: ")
+                        while not((redo.upper()=="YES")or(redo.upper()=="NO")):
+                            print("invalid input")
+                            redo=input("YES or NO: ")
+                        if redo.upper()=="YES":
+                            continue
+                        elif redo.upper()=="NO":
+                            print("you haven't got any reward")
+                            test=True
+                            break
+                    elif decide.upper()=="YES":
+                         hero.throw_item(index)
+                         test=True
+                         break
+            if test==True:
+                break
+        if len(self.inventory)<20 :
+            g=randint(1,3)
+            category=""
+            p=""
+            if g==1:
+                category="weapons"
+                p=str(randint(1,len(database[category])))
+                print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["damage"])+" damage)")
 
+            elif g==2:
+                category="shields"
+                p=str(randint(101,len(database[category])+100))
+                print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["resistance"])+" resistance)")
+            else:
+                category="potions"
+                p=str(randint(201,len(database[category])+200))
+                print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["value"])+" HP points)")
+            self.add_item(database[category][p]["name"])
     def heal(self,value):
         self.health += value
         if self.health > self.max_health:
             self.health= self.max_health
     def check_item_in_inventory(self,database):
-        global weapon , shield , potion
+        global weapon, shield, potion
         weapon=False
         shield=False
         potion=False
         for item in self.inventory:
             for key , value in database.items():
-                for i in value:
+                for i in value.values():
                     if i["name"]==item:
                         if key=="weapons":
                             weapon=True
