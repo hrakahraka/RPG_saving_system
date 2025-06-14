@@ -307,4 +307,4 @@ while hero.level != 60:
 if hero.level>=60:
     print("congrats you won!!")
 else:
-    print("this is not supposed to happen, but you won?")
+    print("you lost try again?")
