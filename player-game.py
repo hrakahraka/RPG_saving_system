@@ -79,15 +79,20 @@ class player:
             if g==1:
                 category="weapons"
                 p=str(randint(1,len(database[category])))
+                while int(p)> (hero.level+15):
+                    p=str(randint(1,len(database[category])))
                 print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["damage"])+" damage)")
-
             elif g==2:
                 category="shields"
                 p=str(randint(101,len(database[category])+100))
+                while int(p)> (hero.level+15):
+                    p=str(randint(1,len(database[category])+100))
                 print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["resistance"])+" resistance)")
             else:
                 category="potions"
                 p=str(randint(201,len(database[category])+200))
+                while int(p)> (hero.level+15):
+                    p=str(randint(1,len(database[category])+200))
                 print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["value"])+" HP points)")
             self.add_item(database[category][p]["name"])
     def heal(self,value):
@@ -242,12 +247,12 @@ while hero.level != 60:
                 S2=0
                 weapon_found=False
                 while not weapon_found:
-                    choice1=int(input("choose your weapon: "))
-                    while choice1>len(hero.inventory)-1:
+                    choice1=input("choose your weapon: ")
+                    while not(str(choice1).isdigit()) or (int(choice1)>len(hero.inventory)-1):
                         print("invalid input")
-                        choice1=int(input("choose your shield: "))
+                        choice1=input("choose your weapon: ")
                     for key , value in database["weapons"].items():
-                        if value["name"]==hero.inventory[choice1]:
+                        if value["name"]==hero.inventory[int(choice1)]:
                             W1=int(value["damage"])
                             weapon_found=True
                     if weapon_found==False:
@@ -255,12 +260,12 @@ while hero.level != 60:
                         hero.show_inventory()
                 shield_found=False
                 while not shield_found:
-                    choice2=int(input("choose your shield: "))
-                    while choice2>len(hero.inventory)-1:
+                    choice2=input("choose your shield: ")
+                    while not(str(choice2).isdigit()) or (int(choice2)>len(hero.inventory)-1):
                         print("invalid input")
-                        choice2=int(input("choose your shield: "))
+                        choice2=input("choose your shield: ")
                     for key , value in database["shields"].items():
-                        if value["name"]==hero.inventory[choice2]:
+                        if value["name"]==hero.inventory[int(choice2)]:
                             S2=int(value["resistance"])
                             shield_found=True
                     if shield_found==False:

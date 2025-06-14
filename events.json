@@ -5,7 +5,7 @@
         "you barely managed to escape",
         "you succesfully killed the goblins!!",
         15,
-        37,
+        67,
         100
     ],
     "2": [
@@ -14,7 +14,7 @@
         "you escape, but not without wounds",
         "you slay the orc and loot its pouch!",
         30,
-        12,
+        41,
         120
     ],
     "3": [
@@ -23,7 +23,7 @@
         "you shatter a few bones and run",
         "the skeletons crumble before your might!",
         25,
-        81,
+        12,
         110
     ],
     "4": [
@@ -32,7 +32,7 @@
         "you dodge the fangs and flee",
         "you slice the spider in half!",
         22,
-        53,
+        54,
         105
     ],
     "5": [
@@ -41,7 +41,7 @@
         "you roll away from the blast",
         "you defeat the mage and claim his staff!",
         35,
-        7,
+        8,
         130
     ],
     "6": [
@@ -50,7 +50,7 @@
         "you scare them off with a loud yell",
         "you fend off the wolves and harvest pelts!",
         18,
-        65,
+        97,
         90
     ],
     "7": [
@@ -59,7 +59,7 @@
         "you slip between its legs and escape",
         "you shatter the golem and cross safely!",
         40,
-        21,
+        36,
         140
     ],
     "8": [
@@ -68,7 +68,7 @@
         "you cover your head and run",
         "you disperse the bats with a mighty swing!",
         12,
-        44,
+        77,
         80
     ],
     "9": [
@@ -77,7 +77,7 @@
         "you parry and retreat into the light",
         "you outmaneuver and defeat the assassin!",
         28,
-        3,
+        23,
         115
     ],
     "10": [
@@ -86,7 +86,7 @@
         "you bribe the troll and escape",
         "you defeat the troll and claim its treasure!",
         32,
-        98,
+        92,
         125
     ],
     "11": [
@@ -257,7 +257,7 @@
         "you resist and escape",
         "you slay the merrow and claim its trident!",
         115,
-        105,
+        41,
         225
     ],
     "30": [
@@ -266,7 +266,7 @@
         "you break free and escape",
         "you outsmart the selkie and claim its skin!",
         120,
-        110,
+        17,
         230
     ],
     "31": [
@@ -275,7 +275,7 @@
         "you dodge and escape",
         "you slay the cyclops and take its eye!",
         125,
-        115,
+        61,
         235
     ],
     "32": [
@@ -284,7 +284,7 @@
         "you find a shortcut and escape",
         "you win the race and gain the centaur's bow!",
         130,
-        120,
+        12,
         240
     ],
     "33": [
@@ -293,7 +293,7 @@
         "you navigate the maze and escape",
         "you slay the minotaur and claim its labyrinthine treasure!",
         135,
-        125,
+        25,
         245
     ],
     "34": [
@@ -302,7 +302,7 @@
         "you shield your face and escape",
         "you slay the harpy and take its feathers!",
         140,
-        130,
+        98,
         250
     ],
     "35": [
@@ -311,7 +311,7 @@
         "you cover your ears and escape",
         "you slay the banshee and gain its wail as a skill!",
         145,
-        135,
+        35,
         255
     ],
     "36": [
@@ -320,7 +320,7 @@
         "you resist its pull and escape",
         "you banish the wraith and claim its cloak!",
         150,
-        140,
+        53,
         260
     ],
     "37": [
@@ -329,7 +329,7 @@
         "you break its focus and escape",
         "you destroy the specter and find treasure!",
         155,
-        145,
+        44,
         265
     ],
     "38": [
@@ -338,7 +338,7 @@
         "you fight off the infection and escape",
         "you slay the ghoul and find gold coins!",
         160,
-        150,
+        77,
         270
     ],
     "39": [
@@ -347,7 +347,7 @@
         "you break through their ranks and escape",
         "you destroy the zombies and find a safe route!",
         165,
-        155,
+        55,
         275
     ],
     "40": [
@@ -356,7 +356,7 @@
         "you resist the thrall and escape",
         "you slay the vampire and claim its cape!",
         170,
-        160,
+        60,
         280
     ],
     "41": [
@@ -365,7 +365,7 @@
         "you break the pact and escape",
         "you destroy the lich and gain its phylactery!",
         175,
-        165,
+        13,
         285
     ],
     "42": [
@@ -374,7 +374,7 @@
         "you evade its grasp and escape",
         "you put the revenant to rest and find its loot!",
         180,
-        170,
+        70,
         290
     ],
     "43": [
@@ -383,7 +383,7 @@
         "you flee the tomb and escape",
         "you unearth the mummy's treasure!",
         185,
-        175,
+        22,
         295
     ],
     "44": [
@@ -392,7 +392,7 @@
         "you resist the flames and escape",
         "you banish the demon and close the gate!",
         190,
-        180,
+        99,
         300
     ],
     "45": [
@@ -401,7 +401,7 @@
         "you shield your eyes and escape",
         "you receive the angel's blessing and a holy relic!",
         195,
-        185,
+        18,
         305
     ],
     "46": [
@@ -410,7 +410,7 @@
         "you roll away and escape",
         "you slay the titan and gain its strength!",
         200,
-        190,
+        91,
         310
     ],
     "47": [
@@ -419,7 +419,7 @@
         "you guess and escape the curse",
         "you answer correctly and gain the sphinx's treasure!",
         205,
-        195,
+        95,
         315
     ],
     "48": [
@@ -428,7 +428,7 @@
         "you fall off and escape",
         "you tame the unicorn and gain a loyal steed!",
         210,
-        200,
+        20,
         320
     ],
     "49": [
@@ -437,7 +437,7 @@
         "you shield yourself and escape",
         "you gain the phoenix's feather and its blessing!",
         215,
-        205,
+        38,
         325
     ],
     "50": [
@@ -446,7 +446,7 @@
         "you accept and gain its power",
         "you betray the dragon and claim its hoard!",
         220,
-        210,
+        10,
         330
     ],
     "51": [
@@ -455,7 +455,7 @@
         "you stab its tentacles and escape",
         "you slay the kraken and claim its ink sac!",
         225,
-        215,
+        83,
         335
     ],
     "52": [
@@ -464,7 +464,7 @@
         "you sail away and escape",
         "you slay the sea serpent and claim its scales!",
         230,
-        220,
+        47,
         340
     ],
     "53": [
@@ -473,7 +473,7 @@
         "you escape its grip",
         "you defeat the clam and find pearls inside!",
         235,
-        225,
+        2,
         345
     ],
     "54": [
@@ -482,7 +482,7 @@
         "you resist and escape",
         "you slay the merrow and claim its trident!",
         240,
-        230,
+        99,
         350
     ],
     "55": [
@@ -491,7 +491,7 @@
         "you break free and escape",
         "you outsmart the selkie and claim its skin!",
         245,
-        235,
+        14,
         355
     ],
     "56": [
@@ -500,7 +500,7 @@
         "you dodge and escape",
         "you slay the cyclops and take its eye!",
         250,
-        240,
+        68,
         360
     ],
     "57": [
@@ -509,7 +509,7 @@
         "you find a shortcut and escape",
         "you win the race and gain the centaur's bow!",
         255,
-        245,
+        77,
         365
     ],
     "58": [
@@ -518,7 +518,7 @@
         "you navigate the maze and escape",
         "you slay the minotaur and claim its labyrinthine treasure!",
         260,
-        250,
+        19,
         370
     ],
     "59": [
@@ -527,7 +527,7 @@
         "you shield your face and escape",
         "you slay the harpy and take its feathers!",
         265,
-        255,
+        89,
         375
     ],
     "60": [
@@ -536,7 +536,7 @@
         "you cover your ears and escape",
         "you slay the banshee and gain its wail as a skill!",
         270,
-        260,
+        3,
         380
     ],
     "61": [
@@ -545,7 +545,7 @@
         "you resist its pull and escape",
         "you banish the wraith and claim its cloak!",
         275,
-        265,
+        56,
         385
     ],
     "62": [
@@ -554,7 +554,7 @@
         "you break its focus and escape",
         "you destroy the specter and find treasure!",
         280,
-        270,
+        97,
         390
     ],
     "63": [
@@ -563,7 +563,7 @@
         "you fight off the infection and escape",
         "you slay the ghoul and find gold coins!",
         285,
-        275,
+        21,
         395
     ],
     "64": [
@@ -572,7 +572,7 @@
         "you break through their ranks and escape",
         "you destroy the zombies and find a safe route!",
         290,
-        280,
+        66,
         400
     ],
     "65": [
@@ -581,7 +581,7 @@
         "you resist the thrall and escape",
         "you slay the vampire and claim its cape!",
         295,
-        285,
+        7,
         405
     ],
     "66": [
@@ -590,7 +590,7 @@
         "you break the pact and escape",
         "you destroy the lich and gain its phylactery!",
         300,
-        290,
+        88,
         410
     ],
     "67": [
@@ -599,7 +599,7 @@
         "you evade its grasp and escape",
         "you put the revenant to rest and find its loot!",
         305,
-        295,
+        29,
         415
     ],
     "68": [
@@ -608,7 +608,7 @@
         "you flee the tomb and escape",
         "you unearth the mummy's treasure!",
         310,
-        300,
+        93,
         420
     ],
     "69": [
@@ -617,7 +617,7 @@
         "you resist the flames and escape",
         "you banish the demon and close the gate!",
         315,
-        305,
+        11,
         425
     ],
     "70": [
@@ -626,7 +626,7 @@
         "you shield your eyes and escape",
         "you receive the angel's blessing and a holy relic!",
         320,
-        310,
+        74,
         430
     ],
     "71": [
@@ -635,7 +635,7 @@
         "you roll away and escape",
         "you slay the titan and gain its strength!",
         325,
-        315,
+        82,
         435
     ],
     "72": [
@@ -644,7 +644,7 @@
         "you guess and escape the curse",
         "you answer correctly and gain the sphinx's treasure!",
         330,
-        320,
+        53,
         440
     ],
     "73": [
@@ -653,7 +653,7 @@
         "you fall off and escape",
         "you tame the unicorn and gain a loyal steed!",
         335,
-        325,
+        97,
         445
     ],
     "74": [
@@ -662,7 +662,7 @@
         "you shield yourself and escape",
         "you gain the phoenix's feather and its blessing!",
         340,
-        330,
+        25,
         450
     ],
     "75": [
@@ -671,7 +671,7 @@
         "you accept and gain its power",
         "you betray the dragon and claim its hoard!",
         345,
-        335,
+        61,
         455
     ],
     "76": [
@@ -680,7 +680,7 @@
         "you stab its tentacles and escape",
         "you slay the kraken and claim its ink sac!",
         350,
-        340,
+        36,
         460
     ],
     "77": [
@@ -689,7 +689,7 @@
         "you sail away and escape",
         "you slay the sea serpent and claim its scales!",
         355,
-        345,
+        92,
         465
     ],
     "78": [
@@ -698,7 +698,7 @@
         "you escape its grip",
         "you defeat the clam and find pearls inside!",
         360,
-        350,
+        14,
         470
     ],
     "79": [
@@ -707,7 +707,7 @@
         "you resist and escape",
         "you slay the merrow and claim its trident!",
         365,
-        355,
+        81,
         475
     ],
     "80": [
@@ -716,7 +716,7 @@
         "you break free and escape",
         "you outsmart the selkie and claim its skin!",
         370,
-        360,
+        59,
         480
     ],
     "81": [
@@ -725,7 +725,7 @@
         "you dodge and escape",
         "you slay the cyclops and take its eye!",
         375,
-        365,
+        6,
         485
     ],
     "82": [
@@ -734,7 +734,7 @@
         "you find a shortcut and escape",
         "you win the race and gain the centaur's bow!",
         380,
-        370,
+        99,
         490
     ],
     "83": [
@@ -743,7 +743,7 @@
         "you navigate the maze and escape",
         "you slay the minotaur and claim its labyrinthine treasure!",
         385,
-        375,
+        43,
         495
     ],
     "84": [
@@ -752,7 +752,7 @@
         "you shield your face and escape",
         "you slay the harpy and take its feathers!",
         390,
-        380,
+        28,
         500
     ],
     "85": [
@@ -761,7 +761,7 @@
         "you cover your ears and escape",
         "you slay the banshee and gain its wail as a skill!",
         395,
-        385,
+        91,
         505
     ],
     "86": [
@@ -770,7 +770,7 @@
         "you resist its pull and escape",
         "you banish the wraith and claim its cloak!",
         400,
-        390,
+        17,
         510
     ],
     "87": [
@@ -779,7 +779,7 @@
         "you break its focus and escape",
         "you destroy the specter and find treasure!",
         405,
-        395,
+        73,
         515
     ],
     "88": [
@@ -788,7 +788,7 @@
         "you fight off the infection and escape",
         "you slay the ghoul and find gold coins!",
         410,
-        400,
+        65,
         520
     ],
     "89": [
@@ -797,7 +797,7 @@
         "you break through their ranks and escape",
         "you destroy the zombies and find a safe route!",
         415,
-        405,
+        32,
         525
     ],
     "90": [
@@ -806,7 +806,7 @@
         "you resist the thrall and escape",
         "you slay the vampire and claim its cape!",
         420,
-        410,
+        98,
         530
     ],
     "91": [
@@ -815,7 +815,7 @@
         "you break the pact and escape",
         "you destroy the lich and gain its phylactery!",
         425,
-        415,
+        51,
         535
     ],
     "92": [
@@ -824,7 +824,7 @@
         "you evade its grasp and escape",
         "you put the revenant to rest and find its loot!",
         430,
-        420,
+        4,
         540
     ],
     "93": [
@@ -833,7 +833,7 @@
         "you flee the tomb and escape",
         "you unearth the mummy's treasure!",
         435,
-        425,
+        79,
         545
     ],
     "94": [
@@ -842,7 +842,7 @@
         "you resist the flames and escape",
         "you banish the demon and close the gate!",
         440,
-        430,
+        23,
         550
     ],
     "95": [
@@ -851,7 +851,7 @@
         "you shield your eyes and escape",
         "you receive the angel's blessing and a holy relic!",
         445,
-        435,
+        95,
         555
     ],
     "96": [
@@ -860,7 +860,7 @@
         "you roll away and escape",
         "you slay the titan and gain its strength!",
         450,
-        440,
+        38,
         560
     ],
     "97": [
@@ -869,7 +869,7 @@
         "you guess and escape the curse",
         "you answer correctly and gain the sphinx's treasure!",
         455,
-        445,
+        12,
         565
     ],
     "98": [
@@ -878,7 +878,7 @@
         "you fall off and escape",
         "you tame the unicorn and gain a loyal steed!",
         460,
-        450,
+        84,
         570
     ],
     "99": [
@@ -887,7 +887,7 @@
         "you shield yourself and escape",
         "you gain the phoenix's feather and its blessing!",
         465,
-        455,
+        34,
         575
     ],
     "100": [
@@ -896,7 +896,7 @@
         "you accept and gain its power",
         "you betray the dragon and claim its hoard!",
         470,
-        77,
+        58,
         580
     ]
 }
