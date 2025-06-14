@@ -1,14 +1,32 @@
 {
     "weapons":{
-        "1":["iron sword",5],
-        "2":["infinity sword",999]
+        "1":{
+            "name":"iron sword",
+            "damage":5
+        },
+        "2":{
+            "name":"infinity sword",
+            "damage":999
+        }
     },
     "shields":{
-        "101":["leather shield",5],
-        "102":["void shield",999]
+        "101":{
+            "name":"leather shield",
+            "resistance":5
+        },
+        "102":{
+            "name":"void shield",
+            "resistance":999
+        }
     },
     "potions":{
-        "201":["health potion",100],
-        "202":["golden potion",999]
+        "201":{
+            "name":"lesser healing potion",
+            "value":15
+        },
+        "202":{
+            "name":"golden potion",
+            "value":999
+        }
     }
 }

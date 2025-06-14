@@ -2,7 +2,6 @@
     "inventory":"to show your inventory",
     "attack":"to attack",
     "flee":"to run away",
-    "choose":"to choose item from inventory (choose the number)(items are sorted by numbers from left to right starting with 0)",
     "use":"to use chosen item",
     "throw":"to throw away chosen item"
 }
