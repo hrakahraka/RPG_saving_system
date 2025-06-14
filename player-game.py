@@ -170,6 +170,7 @@ while hero.level != 60:
             check_cmd(command,cmd_list)
             continue
         elif command.upper()=="HEAL":
+            potion=False
             hero.check_item_in_inventory(database)
             if potion==True:
                 health_addition=0
@@ -227,6 +228,8 @@ while hero.level != 60:
                 check_cmd(command,cmd_list)
                 continue
         elif command.upper()=="ATTACK":
+            sword=False
+            shield=False
             hero.check_item_in_inventory(database)
             if sword==True and shield==True:
                 W1=0
