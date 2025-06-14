@@ -1,3 +1,5 @@
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 import json
 from random import randint
 from time import sleep
@@ -120,7 +122,7 @@ def check_cmd(command,cmd_list):
             if command.upper()==key.upper():
                 test=True
 def saving():
-    with open("player.json" , "w") as f:
+    with open(os.path.join(BASE_DIR,"player.json") , "w") as f:
         json.dump(hero.__dict__ , f , indent=4)
     print("progress saved successfully you may exit safely")
 def death():
@@ -131,15 +133,15 @@ def death():
         "health":100
     }
     print("you died")
-    with open("player.json" , "w") as f:
+    with open(os.path.join(BASE_DIR,"player.json") , "w") as f:
         json.dump(initial,f,indent=4)
-with open("database.json","r")as b:
+with open(os.path.join(BASE_DIR,"database.json"),"r")as b:
     database=json.load(b)
-with open("player.json","r") as f:
+with open(os.path.join(BASE_DIR,"player.json"),"r") as f:
     data=json.load(f)
-with open("command_list.json", "r") as c:
+with open(os.path.join(BASE_DIR,"command_list.json"), "r") as c:
     cmd_list=json.load(c)
-with open("events.json","r") as d:
+with open(os.path.join(BASE_DIR,"events.json"),"r") as d:
     ev_list=json.load(d)
 H_name=input("what is the name of your hero: ")
 hero=player(H_name,data["level"],data["xp"],data["inventory"], data["health"])
