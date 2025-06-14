@@ -1,4 +1,2350 @@
 {
-    "1":["you are attacked by goblins","you tried to fight but it wasn't enough","you barely managed to escape","you succesfully killed the goblins!!",15,15,100]
-
+    "1": [
+        "you are attacked by goblins",
+        "you tried to fight but it wasn't enough",
+        "you barely managed to escape",
+        "you succesfully killed the goblins!!",
+        15,
+        15,
+        100
+    ],
+    "2": [
+        "a wild orc blocks your path",
+        "the orc crushes you with its club",
+        "you escape, but not without wounds",
+        "you slay the orc and loot its pouch!",
+        30,
+        20,
+        120
+    ],
+    "3": [
+        "a band of skeletons rises from the ground",
+        "the skeletons overwhelm you",
+        "you shatter a few bones and run",
+        "the skeletons crumble before your might!",
+        25,
+        18,
+        110
+    ],
+    "4": [
+        "a giant spider descends from above",
+        "the spider's venom proves fatal",
+        "you dodge the fangs and flee",
+        "you slice the spider in half!",
+        22,
+        14,
+        105
+    ],
+    "5": [
+        "a rogue mage casts a fireball at you",
+        "the flames engulf you",
+        "you roll away from the blast",
+        "you defeat the mage and claim his staff!",
+        35,
+        25,
+        130
+    ],
+    "6": [
+        "a pack of wolves surrounds you",
+        "the wolves tear you apart",
+        "you scare them off with a loud yell",
+        "you fend off the wolves and harvest pelts!",
+        18,
+        10,
+        90
+    ],
+    "7": [
+        "a stone golem blocks the bridge",
+        "the golem smashes you into the ground",
+        "you slip between its legs and escape",
+        "you shatter the golem and cross safely!",
+        40,
+        30,
+        140
+    ],
+    "8": [
+        "a swarm of bats engulfs you",
+        "the bats drain your blood",
+        "you cover your head and run",
+        "you disperse the bats with a mighty swing!",
+        12,
+        8,
+        80
+    ],
+    "9": [
+        "a shadow assassin leaps from the darkness",
+        "the assassin's blade finds your heart",
+        "you parry and retreat into the light",
+        "you outmaneuver and defeat the assassin!",
+        28,
+        22,
+        115
+    ],
+    "10": [
+        "a troll demands a toll at the river",
+        "the troll throws you into the water",
+        "you bribe the troll and escape",
+        "you defeat the troll and claim its treasure!",
+        32,
+        24,
+        125
+    ],
+    "11": [
+        "a necromancer summons undead minions",
+        "the undead overwhelm you",
+        "you disrupt the ritual and escape",
+        "you banish the necromancer and his minions!",
+        38,
+        28,
+        135
+    ],
+    "12": [
+        "a wild boar charges at you",
+        "the boar's tusks gore you",
+        "you dodge aside and escape",
+        "you slay the boar and feast tonight!",
+        16,
+        9,
+        85
+    ],
+    "13": [
+        "a bandit ambushes you on the road",
+        "the bandit stabs you in the back",
+        "you throw coins to distract and escape",
+        "you disarm the bandit and take his loot!",
+        20,
+        12,
+        95
+    ],
+    "14": [
+        "a wyvern swoops from the sky",
+        "the wyvern's claws tear you apart",
+        "you hide under a rock and escape",
+        "you slay the wyvern and claim a scale!",
+        45,
+        35,
+        150
+    ],
+    "15": [
+        "a cursed knight challenges you to a duel",
+        "the knight's blade pierces your armor",
+        "you yield and escape with honor",
+        "you break the curse and win the duel!",
+        36,
+        27,
+        128
+    ],
+    "16": [
+        "a fire elemental blocks your path",
+        "the flames engulf you",
+        "you manage to douse the flames and escape",
+        "you defeat the elemental and claim its core!",
+        50,
+        40,
+        160
+    ],
+    "17": [
+        "a frost giant appears before you",
+        "the giant's icy breath freezes you solid",
+        "you shatter the ice and flee",
+        "you slay the giant and claim its gauntlet!",
+        55,
+        45,
+        165
+    ],
+    "18": [
+        "a thunderbird attacks from the sky",
+        "the bird's talons leave you gravely injured",
+        "you take cover and escape",
+        "you defeat the thunderbird and gain its feather!",
+        60,
+        50,
+        170
+    ],
+    "19": [
+        "a basilisk glares at you",
+        "you are petrified by its gaze",
+        "you close your eyes and escape",
+        "you slay the basilisk and brew a potion from its eyes!",
+        65,
+        55,
+        175
+    ],
+    "20": [
+        "a chimera blocks your path",
+        "the chimera's bite is poisonous",
+        "you outsmart the beast and escape",
+        "you slay the chimera and take its horn!",
+        70,
+        60,
+        180
+    ],
+    "21": [
+        "a manticore appears before you",
+        "the manticore's sting is deadly",
+        "you dodge and weave, escaping its attacks",
+        "you slay the manticore and take its tail!",
+        75,
+        65,
+        185
+    ],
+    "22": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        80,
+        70,
+        190
+    ],
+    "23": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        85,
+        75,
+        195
+    ],
+    "24": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        90,
+        80,
+        200
+    ],
+    "25": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        95,
+        85,
+        205
+    ],
+    "26": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        100,
+        90,
+        210
+    ],
+    "27": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        105,
+        95,
+        215
+    ],
+    "28": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        110,
+        100,
+        220
+    ],
+    "29": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        115,
+        105,
+        225
+    ],
+    "30": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        120,
+        110,
+        230
+    ],
+    "31": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        125,
+        115,
+        235
+    ],
+    "32": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        130,
+        120,
+        240
+    ],
+    "33": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        135,
+        125,
+        245
+    ],
+    "34": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        140,
+        130,
+        250
+    ],
+    "35": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        145,
+        135,
+        255
+    ],
+    "36": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        150,
+        140,
+        260
+    ],
+    "37": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        155,
+        145,
+        265
+    ],
+    "38": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        160,
+        150,
+        270
+    ],
+    "39": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        165,
+        155,
+        275
+    ],
+    "40": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        170,
+        160,
+        280
+    ],
+    "41": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        175,
+        165,
+        285
+    ],
+    "42": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        180,
+        170,
+        290
+    ],
+    "43": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        185,
+        175,
+        295
+    ],
+    "44": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        190,
+        180,
+        300
+    ],
+    "45": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        195,
+        185,
+        305
+    ],
+    "46": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        200,
+        190,
+        310
+    ],
+    "47": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        205,
+        195,
+        315
+    ],
+    "48": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        210,
+        200,
+        320
+    ],
+    "49": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        215,
+        205,
+        325
+    ],
+    "50": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        220,
+        210,
+        330
+    ],
+    "51": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        225,
+        215,
+        335
+    ],
+    "52": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        230,
+        220,
+        340
+    ],
+    "53": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        235,
+        225,
+        345
+    ],
+    "54": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        240,
+        230,
+        350
+    ],
+    "55": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        245,
+        235,
+        355
+    ],
+    "56": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        250,
+        240,
+        360
+    ],
+    "57": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        255,
+        245,
+        365
+    ],
+    "58": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        260,
+        250,
+        370
+    ],
+    "59": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        265,
+        255,
+        375
+    ],
+    "60": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        270,
+        260,
+        380
+    ],
+    "61": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        275,
+        265,
+        385
+    ],
+    "62": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        280,
+        270,
+        390
+    ],
+    "63": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        285,
+        275,
+        395
+    ],
+    "64": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        290,
+        280,
+        400
+    ],
+    "65": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        295,
+        285,
+        405
+    ],
+    "66": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        300,
+        290,
+        410
+    ],
+    "67": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        305,
+        295,
+        415
+    ],
+    "68": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        310,
+        300,
+        420
+    ],
+    "69": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        315,
+        305,
+        425
+    ],
+    "70": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        320,
+        310,
+        430
+    ],
+    "71": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        325,
+        315,
+        435
+    ],
+    "72": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        330,
+        320,
+        440
+    ],
+    "73": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        335,
+        325,
+        445
+    ],
+    "74": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        340,
+        330,
+        450
+    ],
+    "75": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        345,
+        335,
+        455
+    ],
+    "76": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        350,
+        340,
+        460
+    ],
+    "77": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        355,
+        345,
+        465
+    ],
+    "78": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        360,
+        350,
+        470
+    ],
+    "79": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        365,
+        355,
+        475
+    ],
+    "80": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        370,
+        360,
+        480
+    ],
+    "81": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        375,
+        365,
+        485
+    ],
+    "82": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        380,
+        370,
+        490
+    ],
+    "83": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        385,
+        375,
+        495
+    ],
+    "84": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        390,
+        380,
+        500
+    ],
+    "85": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        395,
+        385,
+        505
+    ],
+    "86": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        400,
+        390,
+        510
+    ],
+    "87": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        405,
+        395,
+        515
+    ],
+    "88": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        410,
+        400,
+        520
+    ],
+    "89": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        415,
+        405,
+        525
+    ],
+    "90": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        420,
+        410,
+        530
+    ],
+    "91": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        425,
+        415,
+        535
+    ],
+    "92": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        430,
+        420,
+        540
+    ],
+    "93": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        435,
+        425,
+        545
+    ],
+    "94": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        440,
+        430,
+        550
+    ],
+    "95": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        445,
+        435,
+        555
+    ],
+    "96": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        450,
+        440,
+        560
+    ],
+    "97": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        455,
+        445,
+        565
+    ],
+    "98": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        460,
+        450,
+        570
+    ],
+    "99": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        465,
+        455,
+        575
+    ],
+    "100": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        470,
+        460,
+        580
+    ],
+    "101": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        475,
+        465,
+        585
+    ],
+    "102": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        480,
+        470,
+        590
+    ],
+    "103": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        485,
+        475,
+        595
+    ],
+    "104": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        490,
+        480,
+        600
+    ],
+    "105": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        495,
+        485,
+        605
+    ],
+    "106": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        500,
+        490,
+        610
+    ],
+    "107": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        505,
+        495,
+        615
+    ],
+    "108": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        510,
+        500,
+        620
+    ],
+    "109": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        515,
+        505,
+        625
+    ],
+    "110": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        520,
+        510,
+        630
+    ],
+    "111": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        525,
+        515,
+        635
+    ],
+    "112": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        530,
+        520,
+        640
+    ],
+    "113": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        535,
+        525,
+        645
+    ],
+    "114": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        540,
+        530,
+        650
+    ],
+    "115": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        545,
+        535,
+        655
+    ],
+    "116": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        550,
+        540,
+        660
+    ],
+    "117": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        555,
+        545,
+        665
+    ],
+    "118": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        560,
+        550,
+        670
+    ],
+    "119": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        565,
+        555,
+        675
+    ],
+    "120": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        570,
+        560,
+        680
+    ],
+    "121": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        575,
+        565,
+        685
+    ],
+    "122": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        580,
+        570,
+        690
+    ],
+    "123": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        585,
+        575,
+        695
+    ],
+    "124": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        590,
+        580,
+        700
+    ],
+    "125": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        595,
+        585,
+        705
+    ],
+    "126": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        600,
+        590,
+        710
+    ],
+    "127": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        605,
+        595,
+        715
+    ],
+    "128": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        610,
+        600,
+        720
+    ],
+    "129": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        615,
+        605,
+        725
+    ],
+    "130": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        620,
+        610,
+        730
+    ],
+    "131": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        625,
+        615,
+        735
+    ],
+    "132": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        630,
+        620,
+        740
+    ],
+    "133": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        635,
+        625,
+        745
+    ],
+    "134": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        640,
+        630,
+        750
+    ],
+    "135": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        645,
+        635,
+        755
+    ],
+    "136": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        650,
+        640,
+        760
+    ],
+    "137": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        655,
+        645,
+        765
+    ],
+    "138": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        660,
+        650,
+        770
+    ],
+    "139": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        665,
+        655,
+        775
+    ],
+    "140": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        670,
+        660,
+        780
+    ],
+    "141": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        675,
+        665,
+        785
+    ],
+    "142": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        680,
+        670,
+        790
+    ],
+    "143": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        685,
+        675,
+        795
+    ],
+    "144": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        690,
+        680,
+        800
+    ],
+    "145": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        695,
+        685,
+        805
+    ],
+    "146": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        700,
+        690,
+        810
+    ],
+    "147": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        705,
+        695,
+        815
+    ],
+    "148": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        710,
+        700,
+        820
+    ],
+    "149": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        715,
+        705,
+        825
+    ],
+    "150": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        720,
+        710,
+        830
+    ],
+    "151": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        725,
+        715,
+        835
+    ],
+    "152": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        730,
+        720,
+        840
+    ],
+    "153": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        735,
+        725,
+        845
+    ],
+    "154": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        740,
+        730,
+        850
+    ],
+    "155": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        745,
+        735,
+        855
+    ],
+    "156": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        750,
+        740,
+        860
+    ],
+    "157": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        755,
+        745,
+        865
+    ],
+    "158": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        760,
+        750,
+        870
+    ],
+    "159": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        765,
+        755,
+        875
+    ],
+    "160": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        770,
+        760,
+        880
+    ],
+    "161": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        775,
+        765,
+        885
+    ],
+    "162": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        780,
+        770,
+        890
+    ],
+    "163": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        785,
+        775,
+        895
+    ],
+    "164": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        790,
+        780,
+        900
+    ],
+    "165": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        795,
+        785,
+        905
+    ],
+    "166": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        800,
+        790,
+        910
+    ],
+    "167": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        805,
+        795,
+        915
+    ],
+    "168": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        810,
+        800,
+        920
+    ],
+    "169": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        815,
+        805,
+        925
+    ],
+    "170": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        820,
+        810,
+        930
+    ],
+    "171": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        825,
+        815,
+        935
+    ],
+    "172": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        830,
+        820,
+        940
+    ],
+    "173": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        835,
+        825,
+        945
+    ],
+    "174": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        840,
+        830,
+        950
+    ],
+    "175": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        845,
+        835,
+        955
+    ],
+    "176": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        850,
+        840,
+        960
+    ],
+    "177": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        855,
+        845,
+        965
+    ],
+    "178": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        860,
+        850,
+        970
+    ],
+    "179": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        865,
+        855,
+        975
+    ],
+    "180": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        870,
+        860,
+        980
+    ],
+    "181": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        875,
+        865,
+        985
+    ],
+    "182": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        880,
+        870,
+        990
+    ],
+    "183": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        885,
+        875,
+        995
+    ],
+    "184": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        890,
+        880,
+        1000
+    ],
+    "185": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        895,
+        885,
+        1005
+    ],
+    "186": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        900,
+        890,
+        1010
+    ],
+    "187": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        905,
+        895,
+        1015
+    ],
+    "188": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        910,
+        900,
+        1020
+    ],
+    "189": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        915,
+        905,
+        1025
+    ],
+    "190": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        920,
+        910,
+        1030
+    ],
+    "191": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        925,
+        915,
+        1035
+    ],
+    "192": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        930,
+        920,
+        1040
+    ],
+    "193": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        935,
+        925,
+        1045
+    ],
+    "194": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        940,
+        930,
+        1050
+    ],
+    "195": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        945,
+        935,
+        1055
+    ],
+    "196": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        950,
+        940,
+        1060
+    ],
+    "197": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        955,
+        945,
+        1065
+    ],
+    "198": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        960,
+        950,
+        1070
+    ],
+    "199": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        965,
+        955,
+        1075
+    ],
+    "200": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        970,
+        960,
+        1080
+    ],
+    "201": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        975,
+        965,
+        1085
+    ],
+    "202": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        980,
+        970,
+        1090
+    ],
+    "203": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        985,
+        975,
+        1095
+    ],
+    "204": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        990,
+        980,
+        1100
+    ],
+    "205": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        995,
+        985,
+        1105
+    ],
+    "206": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        1000,
+        990,
+        1110
+    ],
+    "207": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        1005,
+        995,
+        1115
+    ],
+    "208": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        1010,
+        1000,
+        1120
+    ],
+    "209": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        1015,
+        1005,
+        1125
+    ],
+    "210": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        1020,
+        1010,
+        1130
+    ],
+    "211": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        1025,
+        1015,
+        1135
+    ],
+    "212": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        1030,
+        1020,
+        1140
+    ],
+    "213": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        1035,
+        1025,
+        1145
+    ],
+    "214": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        1040,
+        1030,
+        1150
+    ],
+    "215": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        1045,
+        1035,
+        1155
+    ],
+    "216": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        1050,
+        1040,
+        1160
+    ],
+    "217": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        1055,
+        1045,
+        1165
+    ],
+    "218": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        1060,
+        1050,
+        1170
+    ],
+    "219": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        1065,
+        1055,
+        1175
+    ],
+    "220": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        1070,
+        1060,
+        1180
+    ],
+    "221": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        1075,
+        1065,
+        1185
+    ],
+    "222": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        1080,
+        1070,
+        1190
+    ],
+    "223": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        1085,
+        1075,
+        1195
+    ],
+    "224": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        1090,
+        1080,
+        1200
+    ],
+    "225": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        1095,
+        1085,
+        1205
+    ],
+    "226": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        1100,
+        1090,
+        1210
+    ],
+    "227": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        1105,
+        1095,
+        1215
+    ],
+    "228": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        1110,
+        1100,
+        1220
+    ],
+    "229": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        1115,
+        1105,
+        1225
+    ],
+    "230": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        1120,
+        1110,
+        1230
+    ],
+    "231": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        1125,
+        1115,
+        1235
+    ],
+    "232": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        1130,
+        1120,
+        1240
+    ],
+    "233": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        1135,
+        1125,
+        1245
+    ],
+    "234": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        1140,
+        1130,
+        1250
+    ],
+    "235": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        1145,
+        1135,
+        1255
+    ],
+    "236": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        1150,
+        1140,
+        1260
+    ],
+    "237": [
+        "a specter haunts the old ruins",
+        "the specter's chill freezes your blood",
+        "you break its focus and escape",
+        "you destroy the specter and find treasure!",
+        1155,
+        1145,
+        1265
+    ],
+    "238": [
+        "a ghoul lurks in the graveyard",
+        "the ghoul's bite infects you",
+        "you fight off the infection and escape",
+        "you slay the ghoul and find gold coins!",
+        1160,
+        1150,
+        1270
+    ],
+    "239": [
+        "a zombie horde blocks your path",
+        "the zombies overwhelm you",
+        "you break through their ranks and escape",
+        "you destroy the zombies and find a safe route!",
+        1165,
+        1155,
+        1275
+    ],
+    "240": [
+        "a vampire lord confronts you",
+        "the vampire's bite weakens you",
+        "you resist the thrall and escape",
+        "you slay the vampire and claim its cape!",
+        1170,
+        1160,
+        1280
+    ],
+    "241": [
+        "a lich offers you a dark pact",
+        "the lich's magic saps your strength",
+        "you break the pact and escape",
+        "you destroy the lich and gain its phylactery!",
+        1175,
+        1165,
+        1285
+    ],
+    "242": [
+        "a revenant seeks revenge",
+        "the revenant's touch is icy",
+        "you evade its grasp and escape",
+        "you put the revenant to rest and find its loot!",
+        1180,
+        1170,
+        1290
+    ],
+    "243": [
+        "a mummy awakens in the tomb",
+        "the mummy's curse weakens you",
+        "you flee the tomb and escape",
+        "you unearth the mummy's treasure!",
+        1185,
+        1175,
+        1295
+    ],
+    "244": [
+        "a demon blocks the infernal gate",
+        "the demon's fire burns you",
+        "you resist the flames and escape",
+        "you banish the demon and close the gate!",
+        1190,
+        1180,
+        1300
+    ],
+    "245": [
+        "an angel offers you a blessing",
+        "the angel's light blinds you",
+        "you shield your eyes and escape",
+        "you receive the angel's blessing and a holy relic!",
+        1195,
+        1185,
+        1305
+    ],
+    "246": [
+        "a titan challenges you to a duel",
+        "the titan's fist crushes you",
+        "you roll away and escape",
+        "you slay the titan and gain its strength!",
+        1200,
+        1190,
+        1310
+    ],
+    "247": [
+        "a sphinx riddle-meets you",
+        "you cannot answer and are cursed",
+        "you guess and escape the curse",
+        "you answer correctly and gain the sphinx's treasure!",
+        1205,
+        1195,
+        1315
+    ],
+    "248": [
+        "a unicorn offers you a ride",
+        "the unicorn's horn pierces your side",
+        "you fall off and escape",
+        "you tame the unicorn and gain a loyal steed!",
+        1210,
+        1200,
+        1320
+    ],
+    "249": [
+        "a phoenix rises from the ashes",
+        "the phoenix's flames burn you",
+        "you shield yourself and escape",
+        "you gain the phoenix's feather and its blessing!",
+        1215,
+        1205,
+        1325
+    ],
+    "250": [
+        "a dragon offers you a pact",
+        "the dragon's fire engulfs you",
+        "you accept and gain its power",
+        "you betray the dragon and claim its hoard!",
+        1220,
+        1210,
+        1330
+    ],
+    "251": [
+        "a kraken attacks your ship",
+        "the kraken drags you into the depths",
+        "you stab its tentacles and escape",
+        "you slay the kraken and claim its ink sac!",
+        1225,
+        1215,
+        1335
+    ],
+    "252": [
+        "a sea serpent blocks your way",
+        "the serpent's bite is venomous",
+        "you sail away and escape",
+        "you slay the sea serpent and claim its scales!",
+        1230,
+        1220,
+        1340
+    ],
+    "253": [
+        "a giant clam attacks you",
+        "the clam's bite crushes your bones",
+        "you escape its grip",
+        "you defeat the clam and find pearls inside!",
+        1235,
+        1225,
+        1345
+    ],
+    "254": [
+        "a merrow sings to you",
+        "the merrow's song lulls you to sleep",
+        "you resist and escape",
+        "you slay the merrow and claim its trident!",
+        1240,
+        1230,
+        1350
+    ],
+    "255": [
+        "a selkie offers you a deal",
+        "the selkie's skin binds you",
+        "you break free and escape",
+        "you outsmart the selkie and claim its skin!",
+        1245,
+        1235,
+        1355
+    ],
+    "256": [
+        "a cyclops blocks the cave",
+        "the cyclops' club crushes you",
+        "you dodge and escape",
+        "you slay the cyclops and take its eye!",
+        1250,
+        1240,
+        1360
+    ],
+    "257": [
+        "a centaur challenges you to a race",
+        "you cannot keep up and are left behind",
+        "you find a shortcut and escape",
+        "you win the race and gain the centaur's bow!",
+        1255,
+        1245,
+        1365
+    ],
+    "258": [
+        "a minotaur guards the labyrinth",
+        "the minotaur's horns gore you",
+        "you navigate the maze and escape",
+        "you slay the minotaur and claim its labyrinthine treasure!",
+        1260,
+        1250,
+        1370
+    ],
+    "259": [
+        "a harpy swoops down to attack",
+        "the harpy's claws rake your face",
+        "you shield your face and escape",
+        "you slay the harpy and take its feathers!",
+        1265,
+        1255,
+        1375
+    ],
+    "260": [
+        "a banshee wails in the night",
+        "the banshee's scream shatters your eardrums",
+        "you cover your ears and escape",
+        "you slay the banshee and gain its wail as a skill!",
+        1270,
+        1260,
+        1380
+    ],
+    "261": [
+        "a wraith emerges from the shadows",
+        "the wraith's touch drains your life",
+        "you resist its pull and escape",
+        "you banish the wraith and claim its cloak!",
+        1275,
+        1265
+    ]
 }

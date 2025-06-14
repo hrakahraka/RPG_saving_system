@@ -12,16 +12,15 @@ class player:
     def add_item(self,item):
         self.inventory.append(item)
     def throw_item(self,index):
-        self.inventory.pop(index)
         print(self.inventory[index]+" have been thrown succsessfully")
+        self.inventory.pop(index)
     def xp_bonus(self,bonus):
         self.xp += bonus
     def level_up(self):
         self.level += 1
-        self.max_health += 100*self.level
+        increase_per_level = (5000 - self.max_health) / (60 - self.level + 1)
+        self.max_health += increase_per_level
         self.health=self.max_health
-    def health_bonus(self):
-        self.max_health += int(100/self.level)
     def show_inventory(self):
         print(self.inventory)
         for i, item in enumerate(self.inventory):
@@ -108,8 +107,6 @@ class player:
                             shield=True
                         elif key=="potions":
                             potion=True
-                    
-            
 def check_cmd(command,cmd_list):
     test=False
     for key in cmd_list:
@@ -187,6 +184,7 @@ while hero.level != 60:
                 hero.heal(health_addition)
                 print(health_addition,"HP points added")
                 print("you have",hero.health,"HP points")
+                hero.throw_item(choice)
                 sleep(3)
                 print(ev_list[event][0])
                 command=input("what do you want to do next: ")
