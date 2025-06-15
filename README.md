@@ -1,24 +1,39 @@
-# RPG text game
+# 🧙‍♂️ RPG Text Game
 
-This is a simple Python project that simulates an RPG game using JSON.
+A terminal-based role-playing game built in Python, powered by JSON for data storage and state persistence.
 
-## Features
+This project simulates a classic RPG experience with leveling, loot, combat, and decision-making — all entirely in the terminal.
 
-- Save player name, level, health, xp ponts, lives, and inventory
-- Load player data from a JSON file
-- Add items, level up, and apply health bonuses
-- More than 300 items
-- 100 different events
-- the difficulty and power of items gained scales alongside the players level
+---
 
-## Files
+## 🎮 Features
 
-- `player-game.py`: The main Python script
-- `player.json`: Stores the saved player data
-- `command_list.json`:containes the used commands in the game
-- `events.json`:contain all the events
-- `database.json`:dics that containes all the items sorted in three categories(weapons, shields, potions) with unique ID to each item
-## How to Run
+- Save and load player state (name, level, XP, health, lives, inventory)
+- Level-up mechanics with dynamic health scaling
+- Over **300 unique items** across categories (weapons, shields, potions)
+- **100+ distinct combat events**
+- Smart reward system — item difficulty scales with player level
+- Inventory management (max 20 items, throw items, confirm actions)
+- Combat chance system with risk/reward percentage
+- Save prompt every 5 events for safety and persistence
+
+---
+
+## 📂 Files
+
+| File              | Purpose |
+|-------------------|---------|
+| `player-game.py`        | Main game engine (Python script) |
+| `player.json`           | Saves player data (level, health, XP, etc.) |
+| `database.json`         | Contains all item data (3 categories) with stats |
+| `events.json`           | Stores game events and related combat data |
+| `command_list.json`     | Defines available in-game commands |
+
+---
+
+## 🚀 How to Run
+
+Make sure all `.json` files are in the same directory as `player-game.py`. Then run:
 
 ```bash
 python player-game.py
