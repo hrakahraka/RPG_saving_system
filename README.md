@@ -1,4 +1,4 @@
-# RPG tesxt game
+# RPG text game
 
 This is a simple Python project that simulates an RPG game using JSON.
 
