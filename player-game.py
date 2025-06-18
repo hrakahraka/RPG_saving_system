@@ -181,7 +181,7 @@ with open(os.path.join(BASE_DIR,"command_list.json"),"r") as c:
     cmd_list=json.load(c)
 with open(os.path.join(BASE_DIR,"events.json"),"r") as d:
     ev_list=json.load(d)
-H_name=input("enter a name to start a new advanture or continue a saved one ")
+H_name=input("enter a name to start a new advanture or continue a saved one: ")
 hero=player(H_name,data["level"],data["xp"],data["inventory"], data["health"],data["event"],data["lives"])
 count=0
 while hero.level != 100:
