@@ -1,8 +1,11 @@
+import base64
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 import json
 from random import randint
 from time import sleep
+from colorama import Fore, Style, init
+init(autoreset=True)
 class player:
     def __init__(self,name,level,xp,inventory,health,s_event,lives):
         self.name=name
@@ -77,19 +80,25 @@ class player:
                 p=str(randint(1,len(database[category])))
                 while int(p)> (self.level+15):
                     p=str(randint(1,len(database[category])))
-                print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["damage"])+" damage)")
+                item_name = database[category][p]["name"]
+                item_stat = f"{database[category][p]['damage']} damage"
+                print(Fore.BLUE + f"you gained {item_name} ({item_stat})")
             elif g==2:
                 category="shields"
                 p=str(randint(101,len(database[category])+100))
                 while int(p)> (self.level+15+100):
                     p=str(randint(101,len(database[category])+100))
-                print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["resistance"])+" resistance)")
+                item_name = database[category][p]["name"]
+                item_stat = f"{database[category][p]['resistance']} resistance"
+                print(Fore.BLUE + f"you gained {item_name} ({item_stat})")
             else:
                 category="potions"
                 p=str(randint(201,len(database[category])+200))
                 while int(p)> (self.level+15+200):
                     p=str(randint(201,len(database[category])+200))
-                print("you gained "+str(database[category][p]["name"])+"("+str(database[category][p]["value"])+" HP points)")
+                item_name = database[category][p]["name"]
+                item_stat = f"{database[category][p]['value']} HP points"
+                print(Fore.BLUE + f"you gained {item_name} ({item_stat})")
             self.add_item(database[category][p]["name"])
     def heal(self,value):
         self.health += value
@@ -114,13 +123,13 @@ class player:
         action=""
         self.lives-=1
         if self.lives<=0:
-            print("you lost all your lives")
+            print(Fore.RED+f"you lost all your lives")
             death()
             action="end"
         else:
-            print("-1 live you still have",self.lives,"lives remaining")
+            print(Fore.RED+f"-1 live you still have {self.lives} lives remaining")
             self.health+=100
-            print("you have",self.health,"HP point")
+            print(Fore.CYAN+f"you have {self.health} HP point")
             action="next"
         return action
     def choose_event(self,ev_list):
@@ -128,6 +137,15 @@ class player:
         while int(event)> (self.level+20):
             event=str(randint(1,len(ev_list)))
         return event
+    def saving(self):
+        encoded=encryption(self.__dict__)
+        with open(os.path.join(BASE_DIR,"player.sav") , "wb") as f:
+            f.write(encoded)
+        print(Fore.MAGENTA+"progress saved successfully you may exit safely")
+def encryption(save_data):
+    sv=json.dumps(save_data)
+    encoded=base64.b64encode(sv.encode())
+    return encoded
 def is_command(command,cmd_list):
     test=False
     for key in cmd_list:
@@ -142,11 +160,21 @@ def check_cmd(command,cmd_list):
         command=input("what do you want to do(write //help// if you need assistance): ")
         test=is_command(command,cmd_list)
     return command
-def saving():
-    with open(os.path.join(BASE_DIR,"player.json") , "w") as f:
-        json.dump(hero.__dict__ , f , indent=4)
-    print("progress saved successfully you may exit safely")
 def death():
+    initial_setup()
+    print("you died")
+def yes_no(decide):
+    while not((decide.upper()=="YES")or(decide.upper()=="NO")):
+        print("invalid input")
+        decide=input("YES or NO: ")
+    return decide
+def seocond_command(ev_list,event):
+    sleep(3)
+    print(ev_list[event][0])
+    command=input("what do you want to do next: ")
+    command=check_cmd(command,cmd_list)
+    return command
+def initial_setup():
     initial={
         "level": 1,
         "inventory": [
@@ -159,29 +187,29 @@ def death():
         "lives":3,
         "event":"0"
     }
-    print("you died")
-    with open(os.path.join(BASE_DIR,"player.json") , "w") as f:
-        json.dump(initial,f,indent=4)
-def yes_no(decide):
-    while not((decide.upper()=="YES")or(decide.upper()=="NO")):
-        print("invalid input")
-        decide=input("YES or NO: ")
-    return decide
-def seocond_command(ev_list,event):
-    sleep(3)
-    print(ev_list[event][0])
-    command=input("what do you want to do next: ")
-    command=check_cmd(command,cmd_list)
-    return command
-with open(os.path.join(BASE_DIR,"database.json"),"r")as b:
-    database=json.load(b)
-with open(os.path.join(BASE_DIR,"player.json"),"r") as f:
-    data=json.load(f)
-with open(os.path.join(BASE_DIR,"command_list.json"),"r") as c:
-    cmd_list=json.load(c)
-with open(os.path.join(BASE_DIR,"events.json"),"r") as d:
-    ev_list=json.load(d)
+    encoded=encryption(initial)
+    with open(os.path.join(BASE_DIR,"player.sav") , "wb") as f:
+        f.write(encoded)
 H_name=input("enter a name to start a new advanture or continue a saved one: ")
+decide=input("do you wan't to start a new game: ")
+decide=yes_no(decide)
+if decide.upper()=="NO":
+    player_save_path=os.path.join(BASE_DIR, "player.sav")
+    if not os.path.exists(player_save_path):
+        print(Fore.YELLOW+"no save file found starting a new game....")
+        initial_setup()
+elif decide.upper()=="YES":
+    initial_setup()
+with open(os.path.join(BASE_DIR,"player.sav"),"rb") as f:
+    encoded=f.read()
+    string=base64.b64decode(encoded).decode()
+    data=json.loads(string)
+with open(os.path.join(BASE_DIR,"database.bas"),"r")as b:
+    database=json.load(b)
+with open(os.path.join(BASE_DIR,"command_list.comm"),"r") as c:
+    cmd_list=json.load(c)
+with open(os.path.join(BASE_DIR,"events.ev"),"r") as d:
+    ev_list=json.load(d)
 hero=player(H_name,data["level"],data["xp"],data["inventory"], data["health"],data["event"],data["lives"])
 count=0
 while hero.level != 100:
@@ -210,7 +238,7 @@ while hero.level != 100:
                             health_addition=int(value["value"])
                             potion_found=True
                     if potion_found==False:
-                        print("not a valid potion")
+                        print(Fore.RED+"not a valid potion")
                         
                 hero.heal(health_addition)
                 print(health_addition,"HP points added")
@@ -256,7 +284,7 @@ while hero.level != 100:
                             W1=int(value["damage"])
                             weapon_found=True
                     if weapon_found==False:
-                        print("not a valid weapon")
+                        print(Fore.RED+"not a valid weapon")
                     sleep(1)
                 shield_found=False
                 hero.show_inventory()
@@ -270,12 +298,12 @@ while hero.level != 100:
                             S2=int(value["resistance"])
                             shield_found=True
                     if shield_found==False:
-                        print("not a valid shield")
+                        print(Fore.RED+"not a valid shield")
                     sleep(1)
                 power=(W1+S2)/2
                 threshold=int(ev_list[hero.event][4])
                 percentage_of_win=int((power / threshold) * 100)
-                decide=input("you have "+str(percentage_of_win)+"%"+" chance to win do you want to proceed: ")
+                decide=input("you have"+Fore.LIGHTGREEN_EX+ f"{percentage_of_win}%"+Style.RESET_ALL+"chance to win do you want to proceed: ")
                 decide=yes_no(decide)
                 if decide.upper()=="NO":
                     if hero.health>int(ev_list[hero.event][5]):
@@ -287,11 +315,11 @@ while hero.level != 100:
                         action=hero.check_death()
                 else:
                     if power >= threshold or (power < threshold and randint(1, 100) <= percentage_of_win) :
-                        print(ev_list[hero.event][3])
+                        print(Fore.GREEN + ev_list[hero.event][3])
                         hero.reward(ev_list,hero.event,database)
                         if hero.xp>=hero.level*200:
                             hero.level_up()
-                            print("LEVEL UP !! (max HP increased you have: "+str(hero.max_health)+" Max HP)")
+                            print(Fore.RED + "LEVEL UP !!" + Style.RESET_ALL +" (max HP increased you have:"+Fore.BLUE +f"{hero.max_health} Max HP)")
                             print(hero.level*200,"xp needed to reach level ",hero.level+1)   
                         action="next"
                     else:
@@ -299,7 +327,7 @@ while hero.level != 100:
                         action=hero.check_death()
                 sleep(3)
             else:
-                print("you don't have the necessary equipments for fighting")
+                print(Fore.RED+"you don't have the necessary equipments for fighting")
                 command=seocond_command(ev_list,hero.event)
                 continue
         elif command.upper()=="FLEE":
@@ -314,10 +342,10 @@ while hero.level != 100:
     if action=="next":
         count+=1
         if count%5==0:
-            save=input("do you wan't to save your progress: ")
+            save=input(Fore.LIGHTBLUE_EX+"do you wan't to save your progress: ")
             save=yes_no(save)
             if save.upper()=="YES":
-                saving()
+                hero.saving()
         continue
     elif action=="end":
         break
