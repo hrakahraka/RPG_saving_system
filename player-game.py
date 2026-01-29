@@ -66,9 +66,9 @@ class player:
                             test=True
                             break
                     elif decide.upper()=="YES":
-                         self.throw_item(index)
-                         test=True
-                         break
+                        self.throw_item(index)
+                        test=True
+                        break
             if test==True:
                 break
         if len(self.inventory)<20 :
@@ -156,7 +156,7 @@ def check_cmd(command,cmd_list):
     test=is_command(command,cmd_list)
     while command.upper()=="HELP" or test==False:
         for ke , value in cmd_list.items():
-         print(f"{ke}:{value}")
+            print(f"{ke}:{value}")
         command=input("what do you want to do(write //help// if you need assistance): ")
         test=is_command(command,cmd_list)
     return command
